@@ -8,7 +8,7 @@ import (
 
 func main() {
 	var n string
-	fmt.Print("Введите целое число: ")
+	fmt.Print("Введите данные: ")
 	_, err := fmt.Scan(&n)
 	if err != nil {
 		log.Fatal(err)
@@ -21,5 +21,5 @@ func main() {
 		data = n
 	}
 
-	fmt.Printf("Вы ввели число: %d\n", n)
+	fmt.Printf("Вы ввели следующие данные: %s\n", n)
 }
